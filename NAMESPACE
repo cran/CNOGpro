@@ -1,0 +1,3 @@
+exportPattern("^[[:alpha:]]+")
+import(seqinr)
+export(CNOGpro, normalizeGC, runBootstrap, runHMM, store, plotCNOGpro, printCNOGpro, summaryCNOGpro)
