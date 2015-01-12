@@ -11,8 +11,8 @@ Detects copy number variation in resequencing experiments
 \tabular{ll}{
 Package: \tab CNOGpro\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2014-06-27\cr
+Version: \tab 1.1\cr
+Date: \tab 2015-01-12\cr
 License: \tab GPL-2\cr
 }
 After mapping the reads from a resequencing experiment to a

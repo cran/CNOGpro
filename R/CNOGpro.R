@@ -44,6 +44,9 @@ function(hitsfile, gbkfile=stop("You must provide a GenBank reference file"), wi
     estimates <- sampleChromosome(copynumber)
     copynumber$mean <- estimates[[1]]
     copynumber$variance <- estimates[[2]]
+    if (copynumber$mean > copynumber$variance){
+      stop("Your data seem to be suffering from underdispersion. Shutting down...\n", call.=FALSE)
+    }
   }
 
   # Remove large objects from memory

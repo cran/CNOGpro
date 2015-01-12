@@ -4,6 +4,7 @@ function(hits, windowlength, chrlength){
   readcount <- numeric(length=length(windows))
   count <- 0
   i <- 1
+  hits <- sort(hits)
   for (hit in hits){
     if (!isbetween(hit,windows[i],(windows[i]+windowlength-1))){
       readcount[i] <- count

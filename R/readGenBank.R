@@ -6,6 +6,7 @@ function( gbkfile ){
   gen.lines <- gsub( " +", ";", gsub( "^ +", "", all.lines[gen.idx] ) )
   join.idx <- grep( "join\\(", gen.lines )
   if( length( join.idx ) > 0 ){
+    cat("Your genbank file contains complex pseudogene structures (keyword: join). CNOGpro does not currently guarantee correct output for these structures.")
     xtra.lines <- NULL
     xtra.idx <- NULL
     for( i in 1:length( join.idx ) ){
